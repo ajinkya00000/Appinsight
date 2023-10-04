@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<body>
+    <div class="container">
+        <h1>Welcome to My Web Application</h1>
+        <hr />
+        <h2>Performance message Logs</h2>
+        <div id="panel">
+            <form method="post" action="/Home/PerformanceForm">
+                <div class="form-group">
+                    <label for="ErrorType" class="label">Performance message</label>
+
+                </div>
+                <div class="form-group">
+                    <label for="lblcustomessage" class="label">Custom Message:</label>
+                    <input type="text" id="CustomErrorMeessage" name="CustomErrorMeessage" />
+                </div>
+
+                <div class="form-group">
+                    <label for="lblperformancecount" class="label">performance count:</label>
+                    <input type="number" id="performancecount" name="performancecount" class="input" required>
+                </div>
+                <button type="submit" class="button">Submit</button>
+
+            </form>
+        </div>
+
+    </div>
+</body>
