@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-string instrumentationKey = "d8d6e682-1547-4d46-bcab-edf207775e6d";
+string instrumentationKey = "3d4d70bc-ddad-4511-bd24-41ee4f63417e";
 builder.Services.AddSingleton<TelemetryClient>(new TelemetryClient(new TelemetryConfiguration(instrumentationKey)));
 
 var app = builder.Build();
