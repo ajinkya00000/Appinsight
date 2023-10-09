@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 string instrumentationKey = "3d4d70bc-ddad-4511-bd24-41ee4f63417e";
 builder.Services.AddSingleton<TelemetryClient>(new TelemetryClient(new TelemetryConfiguration(instrumentationKey)));
-
+ //
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
